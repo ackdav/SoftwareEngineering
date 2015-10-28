@@ -1,0 +1,2 @@
+serviceClass: com.google.gwt.sample.MovieDataBase.client.GreetingService
+path: 8D4E2D53F7EEA33900566E3A49624470.gwt.rpc

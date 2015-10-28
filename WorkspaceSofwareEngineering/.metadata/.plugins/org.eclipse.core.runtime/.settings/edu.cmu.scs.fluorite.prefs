@@ -1,0 +1,5 @@
+EventLogger_CombineCommands=false
+EventLogger_EnableEventLogger=false
+EventLogger_LogDeletedText=false
+EventLogger_LogInsertedText=false
+eclipse.preferences.version=1
