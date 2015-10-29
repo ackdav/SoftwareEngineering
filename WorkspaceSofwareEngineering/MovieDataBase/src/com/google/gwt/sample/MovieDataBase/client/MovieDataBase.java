@@ -39,6 +39,13 @@ public class MovieDataBase implements EntryPoint {
 	 * This is the entry point method.
 	 */
 	public void onModuleLoad() {
+		Importer i = new Importer();
+		i.openFile();
+		i.readFile();
+		MovieStore md = new MovieStore();
+		Film xyz = md.getNthElement(12312);
+		System.out.println(xyz.getMovieLength());
+		
 		final Button sendButton = new Button("Send");
 		final TextBox nameField = new TextBox();
 		nameField.setText("GWT Super Dev Programmer");
