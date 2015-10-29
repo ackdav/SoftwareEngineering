@@ -1,8 +1,8 @@
 package com.google.gwt.sample.MovieDataBase.client;
+import java.util.LinkedList;
 
 public class Film {
 
-	import java.util.LinkedList;
 
 		public int getID() {
 			return ID;
