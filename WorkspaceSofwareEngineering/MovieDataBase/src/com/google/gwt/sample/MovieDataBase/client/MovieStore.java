@@ -1,7 +1,9 @@
 package com.google.gwt.sample.MovieDataBase.client;
 import java.util.LinkedList;
 
-public class MovieStore {
+import com.google.gwt.user.client.rpc.IsSerializable;
+
+public class MovieStore implements IsSerializable{
 	static LinkedList<Film> MovieDatabase = new LinkedList<Film>();
 	public static void addToMovieDataBase(Film film){
 		MovieDatabase.add(film);

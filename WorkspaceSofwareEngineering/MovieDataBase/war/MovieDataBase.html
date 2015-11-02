@@ -1,60 +1,40 @@
 <!doctype html>
-<!-- The DOCTYPE declaration above will set the     -->
-<!-- browser's rendering engine into                -->
-<!-- "Standards Mode". Replacing this declaration   -->
-<!-- with a "Quirks Mode" doctype is not supported. -->
-
 <html>
-  <head>
+  <head>    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-
-    <!--                                                               -->
-    <!-- Consider inlining CSS to reduce the number of requested files -->
-    <!--                                                               -->
     <link type="text/css" rel="stylesheet" href="MovieDataBase.css">
-
-    <!--                                           -->
-    <!-- Any title is fine                         -->
-    <!--                                           -->
-    <title>Web Application Starter Project</title>
-    
-    <!--                                           -->
-    <!-- This script loads your compiled module.   -->
-    <!-- If you add any GWT meta tags, they must   -->
-    <!-- be added before this line.                -->
-    <!--                                           -->
+    <title>MovieDataViewer</title>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
     <script type="text/javascript" language="javascript" src="moviedatabase/moviedatabase.nocache.js"></script>
   </head>
-
-  <!--                                           -->
-  <!-- The body can have arbitrary html, or      -->
-  <!-- you can leave the body empty if you want  -->
-  <!-- to create a completely dynamic UI.        -->
-  <!--                                           -->
   <body>
+    <h1>Movie Data Viewer</h1>
+<!--     <div id="advertisement"></div>
+    <div id="moviedata"></div>
+    <div id="Tab"></div>
+    <div id="enterFilterContainer"></div>
+    <div id="loadButtonContainer"></div>
+    <div id="moviedata"></div>
+    <div id="scrollPanel"></div> -->
 
-    <!-- OPTIONAL: include this if you want history support -->
+   <!--  <div id="map"></div> -->
     <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
-    
-    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
     <noscript>
       <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
         Your web browser must have JavaScript enabled
         in order for this application to display correctly.
       </div>
     </noscript>
-
-    <h1>Web Application Starter Project</h1>
-
-    <table align="center">
+    <table align="left">
       <tr>
-        <td colspan="2" style="font-weight:bold;">Please enter your name:</td>        
+        <td colspan="2" style="font-weight:bold;"><br><br><br><br><br><br></td>        
       </tr>
       <tr>
-        <td id="nameFieldContainer"></td>
-        <td id="sendButtonContainer"></td>
+      	<td id="moviedata"></td>
+      	<td id="advertisement"></td>
       </tr>
       <tr>
+      <td colspan="2" style="font-weight:bold;"><b>Created by ProjectTeam 2 <br>Datenherkunft: © David Bamman, Brendan O'Connor and Noah Smith, "Learning Latent Personas of Film Characters," in: Proceedings of the Annual Meeting of the Association for Computational Linguistics (ACL 2013), Sofia, Bulgaria, August 2013. </b></td>  
         <td colspan="2" style="color:red;" id="errorLabelContainer"></td>
       </tr>
     </table>

@@ -1,7 +1,9 @@
 package com.google.gwt.sample.MovieDataBase.client;
 import java.util.LinkedList;
 
-public class Film {
+
+import com.google.gwt.user.client.rpc.IsSerializable;
+public class Film implements IsSerializable{
 
 
 		public int getID() {

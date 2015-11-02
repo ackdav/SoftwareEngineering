@@ -16,6 +16,16 @@
     <url-pattern>/moviedatabase/greet</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <servlet-name>MySQLConnection</servlet-name>
+    <servlet-class>com.google.gwt.sample.MovieDataBase.server.MySQLConnection</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>MySQLConnection</servlet-name>
+    <url-pattern>/moviedatabase/DBConnection</url-pattern>
+  </servlet-mapping>
+  
   <!-- Default page to serve -->
   <welcome-file-list>
     <welcome-file>MovieDataBase.html</welcome-file>

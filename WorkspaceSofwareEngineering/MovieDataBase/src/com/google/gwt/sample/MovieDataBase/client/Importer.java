@@ -2,7 +2,9 @@ package com.google.gwt.sample.MovieDataBase.client;
 import java.io.*;
 import java.util.*;
 
-public class Importer {
+import com.google.gwt.user.client.rpc.IsSerializable;
+
+public class Importer implements IsSerializable{
 	private int ID;
 	private String movieName;
 	private String date;
@@ -12,9 +14,9 @@ public class Importer {
 	private LinkedList<String> genres = new LinkedList<String>();
 	//for all the elements, that we cannot identify
 	private String sink;
-
+	
 	private Scanner scan;
-	public void openFile() throws FileNotFoundException
+	public void openFile() throws Exception
 	{
 		scan = new Scanner(new File("movies_80000.tsv"));
 	}
